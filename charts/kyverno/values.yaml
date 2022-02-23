@@ -7,6 +7,8 @@ customLabels: {}
 
 rbac:
   create: true
+  aggregatedRoles:
+    enabled: true
   serviceAccount:
     create: true
     name:
