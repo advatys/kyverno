@@ -130,13 +130,13 @@ rules:
       - patch
       - delete
 {{- if .Values.generatecontrollerExtraResources }}
-- apiGroups:
+  - apiGroups:
     - "*"
-  resources:
+    resources:
   {{- range .Values.generatecontrollerExtraResources }}
-  - {{ . }}
+    - {{ . }}
   {{- end }}
-  verbs:
+    verbs:
     - create
     - update
     - delete
